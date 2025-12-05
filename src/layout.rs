@@ -71,10 +71,10 @@ impl SlottedPage {
 
     fn get_record_count(&self) -> usize {
         // parse bytes 2-4 of NodeMeta
-        0 // Placeholder
+        0
     }
 
     fn get_used_data_size(&self) -> usize {
-        0 // Placeholder
+        0
     }
 }
