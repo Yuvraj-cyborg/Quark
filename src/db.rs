@@ -3,7 +3,12 @@ use std::collections::hash_map::Entry;
 
 #[derive(Debug,Clone)]
 pub struct QuarkDB {
-    pub store: HashMap<String,String>,
+    store: HashMap<Vec<u8>,Vec<u8>>,
+}
+
+pub enum DBError{
+    KeyExist,
+    KeyNotFound,
 }
 
 impl QuarkDB {
